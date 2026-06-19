@@ -1,5 +1,9 @@
 import 'package:bloc/bloc.dart';
 
+/// Observer global que intercepta TODOS os Blocs/Cubits da aplicação.
+///
+/// Ideal para logging, analytics e debugging. Registre-o em main() com:
+///   Bloc.observer = AppBlocObserver();
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
 
